@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nav{
+            /* border :1px solid red; */
+            height: 2%;
+            background-color: teal;
+        }
+    
+        #nav div{
+            display: flex;
+            justify-content: center;
+            gap: 30%;
+    
+        }
+        .grant{
+            border: 2px solid red;
+        }
+        </style>
+</head>
+<body>
+    <div id = "nav">
+        <div>
+            <a href="index.html"><h2>Leave</h2></a>
+            <a href="Dashboard.html"><h2>Dashboard</h2></a>
+            <a href="status.html"><h2>Status</h2></a>
+        </div>
+    </div>
+
+<h1 style="text-align: center;">Table</h1>
+<div id="table-cont">
+   <table>
+    <thead>
+        <tr>
+            <th>Unique</th>
+            <th>Name</th>
+            <th>Reason</th>
+            <th>Designation </th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Overseer</th>
+            <th>OTP</th>
+            <th>Reject Leave</th>
+            <th>Grant Leave</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+   </table>
+</div>
+<div>
+    <h3>Filtering</h3>
+    <select id="filterByDesig">
+        <option value="">Type</option>
+        <option value="Student">Student</option>
+        <option value="Employee">Employee</option>
+    </select>
+    <h3>Shorting</h3>
+    <select id="sortByDate">
+        <option value="default">Days</option>
+        <option value="asc">Accending</option>
+        <option value="dsc">Deccending</option>
+    </select>
+    <h3>Search Ny Nmae</h3>
+    <input id="searchByName" type="text" placeholder="search by naam"/>
+</div>
+
+    
+</body>
+</html>
+<script src="/Scripts/dashboard.js"></script>

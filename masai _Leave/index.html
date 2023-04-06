@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #nav{
+        /* border :1px solid red; */
+        height: 2%;
+        background-color: teal;
+    }
+
+    #nav div{
+        display: flex;
+        justify-content: center;
+        gap: 30%;
+
+    }
+    #form {
+        width: 40%;
+        /* text-align: center; */
+        margin: auto;
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    .input_value{
+        width: 90%;
+        padding: 2%;
+
+    }
+
+    #apply_btn{
+        padding:  10px 20px;
+    }
+   </style>
+</head>
+<body>
+    <div id = "nav">
+        <div>
+            <a href="index.html"><h2>Leave</h2></a>
+            <a href="Dashboard.html"><h2>Dashboard</h2></a>
+            <h2>Status</h2>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Leave Request page</h1>
+
+    
+
+   <div id = "form">
+    <form action = "" id = "details" >
+        <label>Unique ID</label><br><br>
+        <input class = "input_value" type="text" id = "unique" placeholder="Enter id" value = ""/>
+
+        <label>Name</label><br><br>
+        <input class = "input_value" type="text" id = "name" placeholder="Enter name" value = ""/>
+
+        <label>Reason for leave</label><br><br>
+        <input class = "input_value" type="text"  id = "leave"placeholder="Leave reason" value = ""/>
+
+        <label>Designation</label><br><br>
+      <select class = "input_value" id = "desig" >
+        <option>Employee</option>
+        <option>Student</option>
+      </select>
+
+      <br><br>
+      <label>Leave Start Date</label><br><br>
+      <input class = "input_value" type="date" id = "start_date" placeholder="Enter Date" value = ""/>
+
+      <label>Leave End Date</label><br><br>
+      <input class = "input_value" type="date" id = "end_date" placeholder="Enter Date" value = ""/>
+
+      <label>Overseer</label><br><br>
+      <select id = "overseer" class="input_value">
+        <option>EC</option>
+        <option>HR</option>
+        <option>Manager</option>
+      </select>
+       <br><br>
+      <input type = "submit" value = "Apply"/>
+
+    
+    </form>
+
+   </div>
+    
+</body>
+</html>
+<script src="./Scripts/index.js"></script>
