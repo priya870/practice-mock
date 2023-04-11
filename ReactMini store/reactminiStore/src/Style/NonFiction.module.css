@@ -1,0 +1,10 @@
+
+.container{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+  
+}
